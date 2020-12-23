@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>【岡村 咲】ギャラリーページ</title>
+   <link rel="stylesheet" href="stylesheets/gallery.css">
+   <link rel="stylesheet" href="stylesheets/common.css">
+   <link rel="icon" sizes="16x16" href="images/favicon16*16.ico">
+   <link rel="icon" sizes="32x32" href="images/favicon32*32.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap&amp;subset=japanese" rel="stylesheet">
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header id="header" class="header">
+        <div class="wrap-header">
+          <div class="header__contents">
+            <h1 class="site__title">Saki Okamura</h1>
+            <div class="hamburger-icon">
+              <i id="modal-openBtn" class="fas fa-bars"></i>
+              <i id="modal-closeBtn" class="fas fa-times"></i>
+            </div>
+            <div id="cover"></div>
+            <nav id="gnav" class="gnav">
+              <ul class="gnav__list">
+                <li class="gnav__list__item"><a href="index.html">Home</a></li>
+                <li class="gnav__list__item"><a href="profile.html">Profile</a></li>
+                 <li class="gnav__list__item state-current"><a href="gallery.html">Gallery</a></li>
+                 <li class="gnav__list__item"><a href="coach.html">Coach</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <nav id="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__list__item"><a href="index.html"><i class="fas fa-house-user"></i>Home</a></li>
+            <li class="breadcrumb__list__item state-current">> Gallery</li>
+          </ol>
+        </nav>
+      </header>
+
+      <main id="main" class="main">
+        <div class="wrap-main">
+          <section class="main__contents">
+            <h2 class="main__contents__title">Welcome to our Gallery page</h2>
+            <p class="main__contents__description_slide-show">
+              プレー中に撮影した写真を用意しました。是非最後までご覧になってください。<br>
+              岡村&ensp;咲の笑顔が皆様の心に咲きますように。
+            </p>
+            <div class="main__contents__slide-show">
+              <picture class="main-contents__img">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop1.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet1.jpg">
+                <img src="images/gallery_img_sp1.jpg" alt="岡村咲の微笑み">
+              </picture>
+              <picture class="main-contents__img">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop2.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet2.jpg">
+                <img src="images/gallery_img_sp2.jpg" alt="フェアウェイからのスイング">
+              </picture>
+              <picture class="main-contents__img">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop3.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet3.jpg">
+                <img src="images/gallery_img_sp3.jpg" alt="ドライバーによるティーショットの風景">
+              </picture>
+              <picture class="main-contents__img">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop4.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet4.jpg">
+                <img src="images/gallery_img_sp4.jpg" alt="岡村咲の笑顔">
+              </picture>
+              <picture class="main-contents__img">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop5.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet5.jpg">
+                <img src="images/gallery_img_sp5.jpg" alt="ドライバーによるティーショットの風景">
+              </picture>
+              <picture class="main-contents__img">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop6.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet6.jpg">
+                <img src="images/gallery_img_sp6.jpg" alt="バンカーショットの風景">
+              </picture>
+            </div>
+          </section>
+          <p class="site__caution">
+            ※当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。<br>
+            また、まとめサイト等への引用を厳禁いたします。
+          </p>
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+        <div class="wrap-footer">
+          <section class="footer__contents">
+            <h2 class="footer__contents__title">~Follow me~</h2>
+            <ul class="footer__contents__sns-link">
+              <li class="sns-link__personal__list list-title">Saki Okamura
+                <ul>
+                  <li class="personal__instagram"><a href="https://www.instagram.com/sakiokamura_official/?hl=ja" target="_blank" rel="noopener"><i class="fab fa-instagram-square sns-icon__instagram"></i></a></li>
+                  <li class="personal__facebook"><a href="https://www.facebook.com/%E5%B2%A1%E6%9D%91%E5%92%B2-Saki-Okamura-622236884505828/" target="_blank" rel="noopener"><i class="fab fa-facebook-square sns-icon__facebook"></i></a></li>
+                </ul>
+              </li>
+              <li class="sns-link__nina-umbrella__list list-title">nina umbrella
+                <ul>
+                  <li class="nina-umbrella__instagram"><a href="https://www.instagram.com/nina_umbrella_project/?hl=ja" target="_blank" rel="noopener"><i class="fab fa-instagram-square sns-icon__instagram"></i></a></li>
+                  <li class="nina-umbrella__facebook"><a href="https://www.facebook.com/nina.umbrella.project/" target="_blank" rel="noopener"><i class="fab fa-facebook-square sns-icon__facebook"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <div class="footer__contents footer__contents__copy-right">
+            <p><small>&copy; <span id="copyRight"></span> Saki Okamura</small></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script src="js/gallery.js"></script>
+  </body>
+</html>

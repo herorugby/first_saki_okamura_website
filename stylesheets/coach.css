@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/* Edit of Header @ common.css */
+/* Edit of Footer @ common.css */
+
+/* Wrap */
+.wrap {
+  width: 100%;
+  height: auto;
+}
+
+/* Main */
+/* css less than 559px ~mobile.ver~ */
+.wrap-main {
+  margin: 1% 5% 2%;
+  background-color: #fafdff;
+  font-family: "Noto Serif JP", serif;
+}
+
+.main__contents__title {
+  margin: 0 auto;
+  font-size: 1.1875rem;
+  text-align: center;
+  border-top: 4px double #000;
+  border-bottom: 4px double #000;
+}
+
+.img-wrap {
+  width: 80%;
+  margin: 2% auto 2%;
+}
+
+.img-wrap--margin {
+  margin-top: 3%;
+}
+
+picture,
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.main__contents__description {
+  margin: 2% 0;
+}
+
+.main__contents__description-title {
+  margin: 0 auto;
+  padding-left: 2%;
+  font-size: 1.125rem;
+  border-left: 5px solid #000;
+}
+
+.main__contents__description p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.main__contents__description_coach {
+  padding: 0 3% 2%;
+}
+
+.fadeIn {
+  transform: translate3d(0, -10px, 0);
+  transition: 2s;
+  opacity: 0;
+}
+
+.fadeIn.animated {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.site__caution {
+  margin: 0 auto;
+  font-size: 0.75rem;
+  font-family: "Noto Serif JP", serif;
+}
+
+/* css 561px or more ~tablet.ver~ */
+/* Main */
+@media screen and (min-width: 560px) {
+  .main__contents__title {
+    font-size: 1.3125rem;
+  }
+
+  .main__contents__description-title {
+    margin-left: 2%;
+    padding-left: 1%;
+    font-size: 1.25rem;
+  }
+
+  .main__contents__description p {
+    line-height: 2;
+    font-size: 1.125rem;
+  }
+
+  .main__contents__description_coach {
+    padding: 0 5% 2%;
+  }
+
+  .site__caution {
+    font-size: 0.8125rem;
+  }
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Main */
+@media screen and (min-width: 960px) {
+  .main__contents__title {
+    font-size: 1.4375rem;
+  }
+
+  .main__contents__description-title {
+    font-size: 1.375rem;
+  }
+
+  .main__contents__description p {
+    line-height: 2.2;
+    font-size: 1.25rem;
+  }
+  .site__caution {
+    font-size: 0.875rem;
+  }
+}

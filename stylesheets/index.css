@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* Edit of Header @ common.css */
+/* Edit of Footer @ common.css */
+
+/* Wrap */
+.wrap {
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 0.264583;
+}
+
+.fill path {
+  fill: #fff;
+  stroke: none;
+  animation: text_white 1s ease-in 0s;
+  -webkit-animation: text_white 1s ease-in 0s;
+}
+
+@-webkit-keyframes text_white {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #fff;
+  }
+}
+
+@keyframes text_white {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #fff;
+  }
+}
+
+#ownsvg {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #000;
+}
+
+/* Main */
+/* css less than 559px ~mobile.ver~ */
+.wrap-main {
+  height: 80vh;
+  margin: 0;
+  position: relative;
+  background-color: #000;
+}
+
+picture,
+img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* css 561px or more ~tablet.ver~ */
+/* Main */
+@media screen and (min-width: 560px) {
+  .wrap-main {
+    height: 80vh;
+  }
+}
+
+/* css 960px or more ~desktop.ver~ */
+/* Main */
+@media screen and (min-width: 960px) {
+  .wrap-main {
+    height: 77vh;
+  }
+}
+
+/* css less than 930px ~landscape.ver~ */
+@media screen and (max-width: 930px) and (orientation: landscape) {
+  .wrap-main {
+    height: 77vh;
+  }
+}

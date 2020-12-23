@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>【岡村 咲】プロフィールページ</title>
+   <link rel="stylesheet" href="stylesheets/profile.css">
+   <link rel="stylesheet" href="stylesheets/common.css">
+   <link rel="icon" sizes="16x16" href="images/favicon16*16.ico">
+   <link rel="icon" sizes="32x32" href="images/favicon32*32.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap&amp;subset=japanese" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header id="header" class="header">
+        <div class="wrap-header">
+          <div class="header__contents">
+            <h1 class="site__title">Saki Okamura</h1>
+            <div class="hamburger-icon">
+              <i id="modal-openBtn" class="fas fa-bars"></i>
+              <i id="modal-closeBtn" class="fas fa-times"></i>
+            </div>
+            <div id="cover"></div>
+            <nav id="gnav" class="gnav">
+              <ul class="gnav__list">
+                <li class="gnav__list__item"><a href="index.html">Home</a></li>
+                <li class="gnav__list__item state-current"><a href="profile.html">Profile</a></li>
+                <li class="gnav__list__item"><a href="gallery.html">Gallery</a></li>
+                <li class="gnav__list__item"><a href="coach.html">Coach</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <nav id="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__list__item"><a href="index.html"><i class="fas fa-house-user"></i>Home</a></li>
+            <li class="breadcrumb__list__item state-current">> Profile</li>
+          </ol>
+        </nav>
+      </header>
+
+      <main id="main" class="main">
+        <div class="wrap-main">
+          <a href="#header" id="page-top-btn" class="wrap-main__item--top"><i class="page-up-icon fas fa-angle-double-up"></i><br>PAGE<br>TOP</a>
+          <a href="#nina-umbrella-project" id="jump-btn" class="wrap-main__item--nina">nina umbrella project&nbsp;<i class="page-down-icon fas fa-angle-double-down"></i></a>
+          <section class="main__contents">
+            <h2 class="main__contents__title">about Saki Okamura</h2>
+              <div class="img-wrap">
+                <picture class="main-contents__img">
+                  <source media="(min-width: 960px)" srcset="images/profile_golf-img_desktop1.jpg">
+                  <source media="(min-width: 560px)" srcset="images/profile_golf-img_tablet1.jpg">
+                  <img src="images/profile_golf-img_sp1.jpg" alt="岡村咲の笑顔">
+                </picture>
+              </div>
+              <section class="main__contents__description">
+                <h3 class="main__contents__description-title fadeIn">-プロフィール-</h3>
+                  <p class="main__contents__description_personal fadeIn">
+                    岡村&nbsp;咲&nbsp;(おかむら&nbsp;さき)<br>
+                    &nbsp;徳島県板野郡 出身<br>
+                    ・10歳から両親の影響でゴルフを始め、ジュニア大会などで好成績を収めた。<br>
+                    ・2011年に高知中央高校を卒業と同時にプロへ転向。<br>
+                    ・2013年日本女子プロゴルフ協会のレギュラーツアー出場権を獲得し、ツアーに本格参戦していた。<br>
+                    ・2016年から原因不明の体調不良によりツアーから離れ療養を行っている。<br>
+                    ・2017年には、ラグビートップリーグでプレーしていた<a href="https://ja.wikipedia.org/wiki/%E5%B0%8F%E9%87%8E%E5%AF%9B%E6%99%BA" target="_blank" rel="noopener">小野寛智</a>と結婚を発表。
+                    翌年、国の指定難病である全身性エリテマトーデスと診断される。<br>
+                    ・2020年からは、nina umbrella projectを発足し、同病気で悩む方に遮光100%の日傘を寄贈する取り組みを行っている。
+                  </p>
+                  <p class="main__contents__description_personal fadeIn">
+                    ~趣味~<br>
+                    &ensp;カラオケ<br>
+                    &ensp;ピアノ<br>
+                    &ensp;グルテンフリースイーツ作り
+                  </p>
+                  <table class="table description_personal-career fadeIn">
+                    <caption>【経歴】</caption>
+                    <tr>
+                      <th>2011年</th>
+                      <td>高知県中央高校卒業後、プロ転向</td>
+                    </tr>
+                    <tr>
+                      <th>2012年</th>
+                      <td>LPGAステップアップツアーフル参戦</td>
+                    </tr>
+                    <tr>
+                      <th>2013年-2015年</th>
+                      <td>LPGAレギュラーツアーフル参戦</td>
+                    </tr>
+                    <tr>
+                      <th>2016年</th>
+                      <td>療養の為、ツアー離脱</td>
+                    </tr>
+                    <tr>
+                      <th>2018年</th>
+                      <td>指定難病 全身性エリテマトーデスと診断される。同年、アスリートフードマイスターの資格を取得</td>
+                    </tr>
+                    <tr>
+                      <th>2019年-2020年</th>
+                      <td>PGMゴルフアカデミー銀座にてゴルフレッスンを行う</td>
+                    </tr>
+                    <tr>
+                      <th>2020年</th>
+                      <td>nina umbrella projectを発足</td>
+                    </tr>
+                  </table>
+                  <table class="table description_personal-appearance fadeIn">
+                    <caption>【テレビ出演・講演】</caption>
+                    <tr>
+                      <th rowspan="3">2015年</th>
+                      <td>news every 日テレ</td>
+                    </tr>
+                    <tr>
+                      <td>ジャンクSPORTS フジTV</td>
+                    </tr>
+                    <tr>
+                      <td>ブレイクスルー NHK Eテレ</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="6">2016年</th>
+                      <td>GOLF女子プロ流 BS11</td>
+                    </tr>
+                    <tr>
+                      <td>岡村咲のGOLF女子プロ流 BS11</td>
+                    </tr>
+                    <tr>
+                      <td>岡村咲のGOLFスコアアップ BS11</td>
+                    </tr>
+                    <tr>
+                      <td>ザ・世界仰天ニュース 日テレ</td>
+                    </tr>
+                    <tr>
+                      <td>NEWS ONZE BS11</td>
+                    </tr>
+                    <tr>
+                      <td>NBSカップin軽井沢 NBS長野放送</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">2017年</th>
+                      <td>岡村咲のGOLFスコアアップ BS11</td>
+                    </tr>
+                    <tr>
+                      <td>NBSカップin軽井沢 NBS長野放送</td>
+                    </tr>
+                    <tr>
+                      <th>2018年</th>
+                      <td>生きるを伝える テレ東</td>
+                    </tr>
+                    <tr>
+                      <th>2019年</th>
+                      <td>世界ループスデー 疾患啓発イベント 講演</td>
+                    </tr>
+                  </table>
+                  <div class="img-wrap img-wrap--margin fadeIn">
+                    <picture class="main-contents__img">
+                      <source media="(min-width: 960px)" srcset="images/profile_golf-img_desktop2.jpg">
+                      <source media="(min-width: 560px)" srcset="images/profile_golf-img_tablet2.jpg">
+                      <img src="images/profile_golf-img_sp2.jpg" alt="岡村咲の笑顔">
+                    </picture>
+                  </div>
+                  <table class="table description_personal_record ama fadeIn">
+                    <caption>【過去の戦績-アマチュア時代-】</caption>
+                    <tr>
+                      <th rowspan="2">2005年</th>
+                      <td>JJGAポロジャパン 四国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <td>黒潮ジュニアカップ 優勝</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">2006年</th>
+                      <td>全日本レディース 四国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <td>四国中学校ゴルフ選手権 優勝</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">2007年</th>
+                      <td>JJGAロレックスジュニア 四国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <td>JJGAロレックスジュニア 全国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="4">2008年</th>
+                      <td>JJGAオールスター 全国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <td>JJGAポロジャパン 全国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <td>evian masters Jr. cup 世界大会団体優勝</td>
+                    </tr>
+                    <tr>
+                      <td>ANNIKAインビテーショナル 日本代表</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="7">2009年</th>
+                      <td>JJGAポロジャパン 全国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <td>JJGA石川遼カップ 四国大会優勝</td>
+                    </tr>
+                    <tr>
+                      <td>JJGA石川遼カップ 全国大会準優勝</td>
+                    </tr>
+                    <tr>
+                      <td>JJGAオールスター 全国大会準優勝</td>
+                    </tr>
+                    <tr>
+                      <td>JJGAロレックスジュニア 全国大会準優勝</td>
+                    </tr>
+                    <tr>
+                      <td>AJGA POLO classic 日本代表</td>
+                    </tr>
+                    <tr>
+                      <td>AJGA ROLEX girl's 日本代表</td>
+                    </tr>
+                  </table>
+                  <table class="table description_personal_record pro fadeIn">
+                    <caption>【過去の戦績-プロ転向後-】</caption>
+                    <tr>
+                      <th>2011年</th>
+                      <td>LPGA QT ステップアップツアー出場権獲得<br>プロ転向</td>
+                    </tr>
+                    <tr>
+                      <th>2012年</th>
+                      <td>LPGAごうぎんレディス 2位<br>LPGA QT レギュラーツアーフル出場権獲得</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="4">2013年</th>
+                      <td>LPGAレギュラーツアーフル参戦</td>
+                    </tr>
+                    <tr>
+                      <td>LPGAダイキンオーキッド 18位</td>
+                    </tr>
+                    <tr>
+                      <td>LPGAスタンレーレディス 7位</td>
+                    </tr>
+                    <tr>
+                      <td>LPGA賞金ランキング75位</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="4">2014年</th>
+                      <td>LPGAレギュラーツアーフル参戦</td>
+                    </tr>
+                    <tr>
+                      <td>LPGAミヤギテレビ杯 31位</td>
+                    </tr>
+                    <tr>
+                      <td>LPGAエリエールレディス 34位</td>
+                    </tr>
+                    <tr>
+                      <td>LPGA賞金ランキング100位</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="4">2015年</th>
+                      <td>LPGAレギュラーツアーフル参戦</td>
+                    </tr>
+                    <tr>
+                      <td>LPGAスタジオアリス 15位</td>
+                    </tr>
+                    <tr>
+                      <td>LPGAいい部屋ネット大東建託 20位</td>
+                    </tr>
+                    <tr>
+                      <td>LPGA賞金ランキング102位</td>
+                    </tr>
+                  </table>
+                  <div class="img-wrap img-wrap--margin fadeIn">
+                    <picture class="main-contents__img">
+                      <source media="(min-width: 960px)" srcset="images/profile_img_desktop.JPG">
+                      <source media="(min-width: 560px)" srcset="images/profile_img_tablet.jpg">
+                      <img src="images/profile_img_sp.jpg" alt="岡村咲の食事風景">
+                    </picture>
+                  </div>
+              </section>
+              <section class="main__contents__description">
+                <h3 class="main__contents__description-title fadeIn">-全身性エリテマトーデス-</h3>
+                <p class="main__contents__description_other fadeIn">
+                  国の指定難病とされている<a href="https://www.nanbyou.or.jp/entry/53" target="_blank" rel="noopener">全身性エリテマトーデス(SLE/Lupus)</a>。<br>
+                  &ensp;本病気の原因は未だに把握できない難病とされており、症状も人により様々にも関わらず完治する治療法も無いのが現状だ。<br>
+                  &ensp;本人も太陽を浴びるとひどい頭痛に見舞われてしまうほどで日中は、自宅で家事や趣味に没頭する日々を送っている。<br>
+                  &ensp;そんな中、同じ病気で悩んでいる方の力に少しでもなりたいと考え、下記にあるnina umbrella Projectを2020年に発足した。
+                </p>
+              </section>
+          </section>
+          <section id="nina-umbrella-project" class="main__contents">
+            <h2 class="main__contents__title fadeIn">about nina umbrella project</h2>
+              <div class="img-wrap img-wrap--margin fadeIn">
+                <picture class="main-contents__img">
+                  <source media="(min-width: 960px)" srcset="images/profile_nina_img_desktop.JPG">
+                  <source media="(min-width: 560px)" srcset="images/profile_nina_img_tablet.jpg">
+                  <img src="images/profile_nina_img_sp.jpg" alt="アクセサリーの作成風景">
+                </picture>
+              </div>
+              <section class="main__contents__description">
+                <h3 class="main__contents__description-title fadeIn">-nina umbrella Project-</h3>
+                  <p class="main__contents__description_nina-umbrella fadeIn">
+                    nina umbrella Project は、プロゴルファーであり nina のアクセサリーを制作する岡村 咲自身も患う指定難病、全身性エリテマトーデス(SLE/Lupus)の患者さんへ、遮光100%の晴れ雨兼用日傘を届けるプロジェクト。<br>
+                    &ensp;SLE患者さんの抱える問題のひとつ、日光過敏症に対して、少しでも快適に外出が出来るよう、nina で販売するアクセサリーの売り上げの一部を資金として寄贈を行います。<br>
+                    &ensp;nina umbrella Projectについての詳細は、<a href="https://nina-umbrella-project.storeinfo.jp/" target="_blank" rel="noopener">こちらよりご覧ください。</a><br>
+                  </p>
+              </section>
+          </section>
+          <p class="site__caution">
+            ※当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。<br>
+            また、まとめサイト等への引用を厳禁いたします。
+          </p>
+        </div>
+      </main>
+
+      <footer id="footer" class="footer">
+        <div class="wrap-footer">
+          <section class="footer__contents">
+            <h2 class="footer__contents__title">~Follow me~</h2>
+            <ul class="footer__contents__sns-link">
+              <li class="sns-link__personal__list list-title">Saki Okamura
+                <ul>
+                  <li class="personal__instagram"><a href="https://www.instagram.com/sakiokamura_official/?hl=ja" target="_blank" rel="noopener"><i class="fab fa-instagram-square sns-icon__instagram"></i></a></li>
+                  <li class="personal__facebook"><a href="https://www.facebook.com/%E5%B2%A1%E6%9D%91%E5%92%B2-Saki-Okamura-622236884505828/" target="_blank" rel="noopener"><i class="fab fa-facebook-square sns-icon__facebook"></i></a></li>
+                </ul>
+              </li>
+              <li class="sns-link__nina-umbrella__list list-title">nina umbrella
+                <ul>
+                  <li class="nina-umbrella__instagram"><a href="https://www.instagram.com/nina_umbrella_project/?hl=ja" target="_blank" rel="noopener"><i class="fab fa-instagram-square sns-icon__instagram"></i></a></li>
+                  <li class="nina-umbrella__facebook"><a href="https://www.facebook.com/nina.umbrella.project/" target="_blank" rel="noopener"><i class="fab fa-facebook-square sns-icon__facebook"></i></a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <div class="footer__contents footer__contents__copy-right">
+            <p><small>&copy; <span id="copyRight"></span> Saki Okamura</small></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script src="js/profile.js"></script>
+  </body>
+</html>
