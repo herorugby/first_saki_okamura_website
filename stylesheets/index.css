@@ -2,6 +2,10 @@
 /* Edit of Header @ common.css */
 /* Edit of Footer @ common.css */
 
+body {
+  height: 100vh;
+}
+
 /* Wrap */
 .wrap {
   width: 100%;

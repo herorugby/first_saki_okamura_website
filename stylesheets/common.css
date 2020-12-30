@@ -37,7 +37,7 @@ li {
   margin: 0;
   padding-left: 18%;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-family: "Abril Fatface", cursive;
 }
 
@@ -45,7 +45,7 @@ li {
   width: 20%;
   padding-right: 5%;
   text-align: center;
-  font-size: 1.0625rem;
+  font-size: 1.3125rem;
 }
 
 #cover {
@@ -227,7 +227,7 @@ li {
 
 .sns-icon__instagram,
 .sns-icon__facebook {
-  font-size: 1.0625rem;
+  font-size: 1.25rem;
 }
 
 .footer__contents__copy-right {
@@ -236,7 +236,7 @@ li {
 
 .footer__contents__copy-right p {
   margin: 0;
-  font-size: 0.5rem;
+  font-size: 0.625rem;
 }
 
 /* css 561px or more ~tablet.ver~ */
