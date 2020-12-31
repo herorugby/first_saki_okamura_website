@@ -8,6 +8,7 @@ function imageJustSize() {
 }
 imageJustSize();
 window.addEventListener("resize", imageJustSize);
+window.addEventListener("load", imageJustSize)
 
 // svg animation
 new Vivus('ownsvg',
