@@ -10,8 +10,20 @@ imageJustSize();
 window.addEventListener("resize", imageJustSize);
 window.addEventListener("load", imageJustSize)
 
+
+$(function() {
+  if ($.cookie("access")) {
+    $("#ownsvg").css({display: "none"});
+  }
+  $(window).load(function() {
+    $.cookie("access", $("body").addClass("access"));
+  });
+});
+
+
 // svg animation
-new Vivus('ownsvg',
+$(function() {
+  new Vivus('ownsvg',
     {
       type: "sync",
       start: 'autostart',
@@ -36,6 +48,9 @@ $(function() {
       $(".wrap").animate({opacity: "1"}, 1000);
     }, 5500);
   });
+});
+
+
 
 
 // modal menu
