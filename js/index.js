@@ -1,17 +1,11 @@
 // just size fixed of index.html top visual
 function imageJustSize() {
   const mainVisual = document.getElementsByTagName('body');
-  // mainVisual.height = document.documentElement.clientHeight + "px";
-  // mainVisual.width = document.documentElement.clientWidth + "px";
-  mainVisual.height = window.innerHeight + "px";
-  mainVisual.width = window.innerWidth + "px";
-  // const deviceHi = document.documentElement.clientHeight;
-  // const deviceWi = document.documentElement.clientWidth;
-  // mainVisual.style.height = deviceHi + "px";
-  // mainVisual.style.width = deviceWi + "px";
+  mainVisual.height = document.documentElement.clientHeight + "px";
+  mainVisual.width = document.documentElement.clientWidth + "px";
 }
 imageJustSize();
-window.addEventListener("load", imageJustSize);
+document.addEventListener("load", imageJustSize);
 window.addEventListener("resize", imageJustSize);
 
 
