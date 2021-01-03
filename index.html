@@ -15,8 +15,9 @@
    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap&amp;subset=japanese" rel="stylesheet">
-   <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vivus@0.4.5/dist/vivus.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
    <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -34,7 +35,7 @@
       <path class="text" d="m 49.267239,36.621328 q -0.384472,0.36587 -0.775146,0.551905 -0.390674,0.179834 -0.787549,0.179834 -0.632519,0 -0.979785,-0.378272 -0.341065,-0.384472 -0.341065,-0.930176 0,-0.421679 0.204639,-0.750341 0.21084,-0.334864 0.514697,-0.514698 0.310059,-0.186035 1.016993,-0.440283 0.595312,-0.21084 0.79375,-0.328662 0.204638,-0.124023 0.341064,-0.353467 0.136426,-0.235644 0.136426,-0.607715 0,-0.409277 -0.204639,-0.651123 -0.204639,-0.248046 -0.564307,-0.248046 -0.310058,0 -0.440283,0.155029 -0.130224,0.16123 -0.198437,0.514697 -0.142627,0.706934 -0.762744,0.706934 -0.254248,0 -0.434082,-0.148828 -0.179834,-0.148829 -0.179834,-0.427881 0,-0.595313 0.644922,-0.886768 0.651123,-0.297656 1.550292,-0.297656 0.775147,0 1.258838,0.235644 0.489893,0.235645 0.626319,0.545704 0.136425,0.310058 0.136425,0.967382 l -0.0124,1.469678 q 0,1.159619 0.07441,1.488281 0.08062,0.328662 0.334863,0.328662 0.03721,0 0.09922,-0.0062 0.124024,-0.0124 0.167432,-0.0124 0.254248,0 0.254248,0.142627 0,0.09302 -0.10542,0.16123 -0.10542,0.06201 -0.638721,0.161231 -0.527099,0.09922 -0.95498,0.09922 -0.427881,0 -0.589112,-0.161231 -0.155029,-0.167432 -0.186035,-0.564307 z m 0.08062,-2.480468 q -0.148829,0.179834 -0.713135,0.47749 -0.514697,0.272851 -0.68833,0.483691 -0.173633,0.217041 -0.173633,0.626319 0,0.434082 0.179834,0.663525 0.186035,0.223242 0.452685,0.223242 0.359668,0 0.669727,-0.328662 0.310059,-0.334863 0.310059,-1.172021 0,-0.26045 -0.03721,-0.973584 z"/>
     </svg>
     <div class="wrap">
-      <header id="header" class="header">
+      <header id="header">
         <div class="wrap-header">
           <div class="header__contents">
             <h1 class="site__title">Saki Okamura</h1>
@@ -43,7 +44,7 @@
               <i id="modal-closeBtn" class="fas fa-times"></i>
             </div>
             <div id="cover"></div>
-            <nav id="gnav" class="gnav">
+            <nav id="gnav">
               <ul class="gnav__list">
                 <li class="gnav__list__item state-current"><a href="index.html">Home</a></li>
                 <li class="gnav__list__item"><a href="profile.html">Profile</a></li>
@@ -55,9 +56,9 @@
         </div>
       </header>
 
-      <main id="main" class="main">
+      <main id="main">
         <div class="wrap-main">
-          <picture class="main-contents__img1">
+          <picture class="main-contents__img">
             <source media="(min-width: 960px)" srcset="images/index_img_desktop1.jpg">
             <source media="(min-width: 560px)" srcset="images/index_img_tablet1.jpg">
             <img src="images/index_img_sp1.jpg" alt="岡村咲の顔写真">
@@ -75,7 +76,7 @@
         </div>
       </main>
 
-      <footer id="footer" class="footer">
+      <footer id="footer">
         <div class="wrap-footer">
           <section class="footer__contents">
             <h2 class="footer__contents__title">~Follow me~</h2>
@@ -94,7 +95,7 @@
               </li>
             </ul>
           </section>
-          <div class="footer__contents footer__contents__copy-right">
+          <div class="footer__contents__copy-right">
             <p><small>&copy; <span id="copyRight"></span> Saki Okamura</small></p>
           </div>
         </div>

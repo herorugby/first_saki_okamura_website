@@ -1,17 +1,21 @@
 // just size fixed of index.html top visual
 function imageJustSize() {
-  const mainVisual = document.body;
-  const deviceHi = document.documentElement.clientHeight;
-  const deviceWi = document.documentElement.clientWidth;
-  mainVisual.style.height = deviceHi + "px";
-  mainVisual.style.width = deviceWi + "px";
+  const mainVisual = document.getElementsByTagName('body');
+  mainVisual.height = document.documentElement.clientHeight + "px";
+  mainVisual.width = document.documentElement.clientWidth + "px";
+  // const deviceHi = document.documentElement.clientHeight;
+  // const deviceWi = document.documentElement.clientWidth;
+  // mainVisual.style.height = deviceHi + "px";
+  // mainVisual.style.width = deviceWi + "px";
 }
 imageJustSize();
+document.addEventListener("load", imageJustSize);
 window.addEventListener("resize", imageJustSize);
-window.addEventListener("load", imageJustSize)
+
 
 // svg animation
-new Vivus('ownsvg',
+$(function() {
+  new Vivus('ownsvg',
     {
       type: "sync",
       start: 'autostart',
@@ -36,6 +40,9 @@ $(function() {
       $(".wrap").animate({opacity: "1"}, 1000);
     }, 5500);
   });
+});
+
+
 
 
 // modal menu
