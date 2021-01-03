@@ -1,6 +1,6 @@
 // just size fixed of index.html top visual
 function imageJustSize() {
-  const mainVisual = document.getElementsByTagName("body");
+  const mainVisual = document.getElementsByTagName('body');
   mainVisual.height = document.documentElement.clientHeight + "px";
   mainVisual.width = document.documentElement.clientWidth + "px";
   // const deviceHi = document.documentElement.clientHeight;
@@ -8,8 +8,10 @@ function imageJustSize() {
   // mainVisual.style.height = deviceHi + "px";
   // mainVisual.style.width = deviceWi + "px";
 }
+imageJustSize();
+document.addEventListener("DOMContentLoaded", imageJustSize);
 window.addEventListener("resize", imageJustSize);
-window.addEventListener("load", imageJustSize);
+// window.addEventListener("load", imageJustSize);
 
 
 // svg animation
