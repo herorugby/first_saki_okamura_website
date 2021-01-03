@@ -1,8 +1,10 @@
 // just size fixed of index.html top visual
 function imageJustSize() {
-  const mainVisual = document.getElementsByTagName('body');
-  mainVisual.height = document.documentElement.clientHeight + "px";
-  mainVisual.width = document.documentElement.clientWidth + "px";
+  // const mainVisual = document.body;
+  // mainVisual.height = document.documentElement.clientHeight + "px";
+  // mainVisual.width = document.documentElement.clientWidth + "px";
+  document.body.height = document.documentElement.clientHeight + "px";
+  document.body.width = document.documentElement.clientWidth + "px";
 }
 imageJustSize();
 document.addEventListener("load", imageJustSize);
