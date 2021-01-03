@@ -14,7 +14,7 @@ function svgJustImage() {
   document.getElementById("ownsvg").style.width = imageWi;
 }
 svgJustImage();
-document.addEventListener("load", svgJustImage);
+window.onload = svgJustImage();
 window.addEventListener("resize", svgJustImage);
 
 function wrapJustImage() {
@@ -22,7 +22,7 @@ function wrapJustImage() {
   document.getElementsByClassName("wrap").width = imageWi;
 }
 wrapJustImage();
-document.addEventListener("load", wrapJustImage);
+window.onload = wrapJustImage();
 window.addEventListener("resize", wrapJustImage);
 
 // svg animation
