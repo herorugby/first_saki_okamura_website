@@ -9,9 +9,8 @@ function imageJustSize() {
   // mainVisual.style.width = deviceWi + "px";
 }
 imageJustSize();
-document.addEventListener("DOMContentLoaded", imageJustSize);
+window.addEventListener("load", imageJustSize);
 window.addEventListener("resize", imageJustSize);
-// window.addEventListener("load", imageJustSize);
 
 
 // svg animation
