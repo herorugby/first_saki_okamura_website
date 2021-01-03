@@ -6,19 +6,8 @@ function imageJustSize() {
   mainVisual.style.height = deviceHi + "px";
   mainVisual.style.width = deviceWi + "px";
 }
-imageJustSize();
 window.addEventListener("resize", imageJustSize);
-window.addEventListener("load", imageJustSize)
-
-
-$(function() {
-  if ($.cookie("access")) {
-    $("#ownsvg").css({display: "none"});
-  }
-  $(window).load(function() {
-    $.cookie("access", $("body").addClass("access"));
-  });
-});
+window.addEventListener("load", imageJustSize);
 
 
 // svg animation
