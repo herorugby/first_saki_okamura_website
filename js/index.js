@@ -1,13 +1,6 @@
 // just size fixed of index.html top visual
 let imageHi = document.documentElement.clientHeight + "px";
 let imageWi = document.documentElement.clientWidth + "px";
-// function imageJustSize() {
-//   document.body.height = document.documentElement.clientHeight + "px";
-//   document.body.width = document.documentElement.clientWidth + "px";
-// }
-// imageJustSize();
-// document.addEventListener("load", imageJustSize);
-// window.addEventListener("resize", imageJustSize);
 
 function svgJustImage() {
   document.getElementById("ownsvg").style.height = imageHi;
