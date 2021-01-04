@@ -3,18 +3,16 @@
  <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>【岡村 咲】ギャラリーページ</title>
-   <link rel="stylesheet" href="stylesheets/gallery.css">
-   <link rel="stylesheet" href="stylesheets/common.css">
-   <link rel="icon" sizes="16x16" href="images/favicon16*16.ico">
-   <link rel="icon" sizes="32x32" href="images/favicon32*32.ico">
-   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+   <title>【岡村 咲】コーチ紹介</title>
+   <link rel="stylesheet" href="../stylesheets/coach.css">
+   <link rel="stylesheet" href="../stylesheets/common.css">
+   <link rel="icon" sizes="16x16" href="../images/favicon16*16.ico">
+   <link rel="icon" sizes="32x32" href="../images/favicon32*32.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-icon-180x180.png">
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap&amp;subset=japanese" rel="stylesheet">
-   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
   </head>
@@ -34,8 +32,8 @@
               <ul class="gnav__list">
                 <li class="gnav__list__item"><a href="index.html">Home</a></li>
                 <li class="gnav__list__item"><a href="profile.html">Profile</a></li>
-                 <li class="gnav__list__item state-current"><a href="gallery.html">Gallery</a></li>
-                 <li class="gnav__list__item"><a href="coach.html">Coach</a></li>
+                <li class="gnav__list__item"><a href="gallery.html">Gallery</a></li>
+                <li class="gnav__list__item state-current"><a href="coach.html">Coach</a></li>
               </ul>
             </nav>
           </div>
@@ -43,7 +41,7 @@
         <nav id="breadcrumb" class="breadcrumb">
           <ol class="breadcrumb__list">
             <li class="breadcrumb__list__item"><a href="index.html"><i class="fas fa-house-user"></i>Home</a></li>
-            <li class="breadcrumb__list__item state-current">> Gallery</li>
+            <li class="breadcrumb__list__item state-current">> Coach</li>
           </ol>
         </nav>
       </header>
@@ -51,43 +49,25 @@
       <main id="main">
         <div class="wrap-main">
           <section class="main__contents">
-            <h2 class="main__contents__title">Welcome to our Gallery page</h2>
-            <p class="main__contents__description_slide-show">
-              プレー中に撮影した写真を用意しました。是非最後までご覧になってください。<br>
-              岡村&ensp;咲の笑顔が皆様の心に咲きますように。
-            </p>
-            <div class="main__contents__slide-show">
-              <picture class="main-contents__img">
-                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop1.jpg">
-                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet1.jpg">
-                <img src="images/gallery_img_sp1.jpg" alt="岡村咲の微笑み">
-              </picture>
-              <picture class="main-contents__img">
-                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop2.jpg">
-                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet2.jpg">
-                <img src="images/gallery_img_sp2.jpg" alt="フェアウェイからのスイング">
-              </picture>
-              <picture class="main-contents__img">
-                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop3.jpg">
-                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet3.jpg">
-                <img src="images/gallery_img_sp3.jpg" alt="ドライバーによるティーショットの風景">
-              </picture>
-              <picture class="main-contents__img">
-                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop4.jpg">
-                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet4.jpg">
-                <img src="images/gallery_img_sp4.jpg" alt="岡村咲の笑顔">
-              </picture>
-              <picture class="main-contents__img">
-                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop5.jpg">
-                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet5.jpg">
-                <img src="images/gallery_img_sp5.jpg" alt="ドライバーによるティーショットの風景">
-              </picture>
-              <picture class="main-contents__img">
-                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop6.jpg">
-                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet6.jpg">
-                <img src="images/gallery_img_sp6.jpg" alt="バンカーショットの風景">
-              </picture>
-            </div>
+            <h2 class="main__contents__title fadeIn">about Coach</h2>
+              <div class="img-wrap img-wrap--margin fadeIn">
+                <picture class="main-contents__img img">
+                  <source media="(min-width: 960px)" srcset="../images/coach_img_desktop.jpg">
+                  <source media="(min-width: 560px)" srcset="../images/coach_img_tablet.jpg">
+                  <img src="../images/coach_img_sp.jpg" alt="岡村コーチの指導風景">
+                </picture>
+              </div>
+              <section class="main__contents__description">
+                <h3 class="main__contents__description-title fadeIn">-岡村 茂和-</h3>
+                  <p class="main__contents__description_coach fadeIn">
+                    岡村 咲の父親でありコーチを務める。<br>
+                    &nbsp;岡村 咲がツアー参戦時には、帯同しながらコーチングを行なっていた。<br>
+                    &nbsp;趣味はマイクロバスで日本全国を旅し、各地の温泉巡りを行うこと。<br>
+                    &nbsp;ゴルフとの出会いは、中学生に遡る。一時はプロを目指していたが、交通事故に遭い重傷を負い夢を諦めた。<br>
+                    娘に夢を託し、プロにまで育て上げ、「岡村流」とも言われるほどの独自の理論を確立した。<br>
+                    &nbsp;最近はパークゴルフに没頭し、持ち前の親しみやすいキャラクターで出会った仲間とゴルフ談議に花を咲かせている。
+                  </p>
+              </section>
           </section>
           <p class="site__caution">
             ※当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。<br>
@@ -121,6 +101,6 @@
         </div>
       </footer>
     </div>
-  <script src="js/gallery.js"></script>
+  <script src="../js/coach.js"></script>
   </body>
 </html>

@@ -1,22 +1,30 @@
 // just size fixed of index.html top visual
 let imageHi = document.documentElement.clientHeight + "px";
 let imageWi = document.documentElement.clientWidth + "px";
-
-function svgJustImage() {
-  document.getElementById("ownsvg").style.height = imageHi;
-  document.getElementById("ownsvg").style.width = imageWi;
+function justSize() {
+  document.body.height = imageHi;
+  document.body.width = imageWi;
+  return false;
 }
-svgJustImage();
-window.onload = svgJustImage();
-window.addEventListener("resize", svgJustImage);
+justSize();
+window.onload = justSize();
+window.addEventListener("resize", justSize);
 
-function wrapJustImage() {
-  document.getElementById("wrap").style.height = imageHi;
-  document.getElementById("wrap").style.width = imageWi;
-}
-wrapJustImage();
-window.onload = wrapJustImage();
-window.addEventListener("resize", wrapJustImage);
+// function svgJustImage() {
+//   document.getElementById("ownsvg").style.height = imageHi;
+//   document.getElementById("ownsvg").style.width = imageWi;
+// }
+// svgJustImage();
+// window.onload = svgJustImage();
+// window.addEventListener("resize", svgJustImage);
+
+// function wrapJustImage() {
+//   document.getElementById("wrap").style.height = imageHi;
+//   document.getElementById("wrap").style.width = imageWi;
+// }
+// wrapJustImage();
+// window.onload = wrapJustImage();
+// window.addEventListener("resize", wrapJustImage);
 
 // svg animation
 $(function() {
