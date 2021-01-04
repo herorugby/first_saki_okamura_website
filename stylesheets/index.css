@@ -2,15 +2,12 @@
 /* Edit of Header @ common.css */
 /* Edit of Footer @ common.css */
 
-html,
-body {
-  height: 100vh;
-}
-
 /* Wrap */
-.wrap {
+#ownsvg {
   width: 100%;
   height: 100vh;
+  position: relative;
+  background-color: #000;
 }
 
 .text {
@@ -44,11 +41,9 @@ body {
   }
 }
 
-#ownsvg {
+.wrap {
   width: 100%;
   height: 100vh;
-  position: relative;
-  background-color: #000;
 }
 
 /* Main */
