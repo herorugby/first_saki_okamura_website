@@ -18,8 +18,8 @@ window.onload = svgJustImage();
 window.addEventListener("resize", svgJustImage);
 
 function wrapJustImage() {
-  document.getElementsByClassName("wrap").height = imageHi;
-  document.getElementsByClassName("wrap").width = imageWi;
+  document.getElementById("wrap").style.height = imageHi;
+  document.getElementById("wrap").style.width = imageWi;
 }
 wrapJustImage();
 window.onload = wrapJustImage();
