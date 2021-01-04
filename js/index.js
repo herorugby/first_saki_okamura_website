@@ -13,6 +13,7 @@ window.addEventListener("resize", justSize);
 // function svgJustImage() {
 //   document.getElementById("ownsvg").style.height = imageHi;
 //   document.getElementById("ownsvg").style.width = imageWi;
+//   return false;
 // }
 // svgJustImage();
 // window.onload = svgJustImage();
@@ -21,6 +22,7 @@ window.addEventListener("resize", justSize);
 // function wrapJustImage() {
 //   document.getElementById("wrap").style.height = imageHi;
 //   document.getElementById("wrap").style.width = imageWi;
+//   return false;
 // }
 // wrapJustImage();
 // window.onload = wrapJustImage();
