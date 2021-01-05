@@ -1,43 +1,18 @@
 // just size fixed of index.html top visual
 var hSize = $(window).height();
+var wSize = $(window).width();
 $(document).ready(function() {
   $("#ownsvg").css("height", hSize);
+  $("#ownsvg").css("width", wSize);
   $(".wrap").css("height", hSize);
+  $(".wrap").css("width", wSize);
 });
 $(window).resize(function() {
   $("#ownsvg").css("height", hSize);
+  $("#ownsvg").css("width", wSize);
   $(".wrap").css("height", hSize);
+  $(".wrap").css("width", wSize);
 });
-// $("#ownsvg").css("height",$(window).height());
-
-// let imageHi = document.documentElement.clientHeight + "px";
-// let imageWi = document.documentElement.clientWidth + "px";
-// function justSize() {
-//   document.body.height = imageHi;
-//   document.body.width = imageWi;
-//   return false;
-// }
-// justSize();
-// window.onload = justSize();
-// window.addEventListener("resize", justSize);
-
-// function svgJustImage() {
-//   document.getElementById("ownsvg").style.height = imageHi;
-//   document.getElementById("ownsvg").style.width = imageWi;
-//   return false;
-// }
-// svgJustImage();
-// window.onload = svgJustImage();
-// window.addEventListener("resize", svgJustImage);
-
-// function wrapJustImage() {
-//   document.getElementById("wrap").style.height = imageHi;
-//   document.getElementById("wrap").style.width = imageWi;
-//   return false;
-// }
-// wrapJustImage();
-// window.onload = wrapJustImage();
-// window.addEventListener("resize", wrapJustImage);
 
 // svg animation
 $(function() {
