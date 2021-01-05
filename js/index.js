@@ -1,14 +1,25 @@
 // just size fixed of index.html top visual
-let imageHi = document.documentElement.clientHeight + "px";
-let imageWi = document.documentElement.clientWidth + "px";
-function justSize() {
-  document.body.height = imageHi;
-  document.body.width = imageWi;
-  return false;
-}
-justSize();
-window.onload = justSize();
-window.addEventListener("resize", justSize);
+var hSize = $(window).height();
+$(document).ready(function() {
+  $("#ownsvg").css("height", hSize);
+  $(".wrap").css("height", hSize);
+});
+$(window).resize(function() {
+  $("#ownsvg").css("height", hSize);
+  $(".wrap").css("height", hSize);
+});
+// $("#ownsvg").css("height",$(window).height());
+
+// let imageHi = document.documentElement.clientHeight + "px";
+// let imageWi = document.documentElement.clientWidth + "px";
+// function justSize() {
+//   document.body.height = imageHi;
+//   document.body.width = imageWi;
+//   return false;
+// }
+// justSize();
+// window.onload = justSize();
+// window.addEventListener("resize", justSize);
 
 // function svgJustImage() {
 //   document.getElementById("ownsvg").style.height = imageHi;
