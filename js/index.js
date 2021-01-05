@@ -1,17 +1,20 @@
 // just size fixed of index.html top visual
-var hSize = $(window).height();
-var wSize = $(window).width();
 $(document).ready(function() {
-  $("#ownsvg").css("height", hSize);
-  $("#ownsvg").css("width", wSize);
-  $(".wrap").css("height", hSize);
-  $(".wrap").css("width", wSize);
+  var hSize = $(window).height();
+  var wSize = $(window).width();
+  $("#ownsvg").height(hSize);
+  $("#ownsvg").width(wSize);
+  $(".wrap").height(hSize);
+  $(".wrap").width(wSize);
 });
+
 $(window).resize(function() {
-  $("#ownsvg").css("height", hSize);
-  $("#ownsvg").css("width", wSize);
-  $(".wrap").css("height", hSize);
-  $(".wrap").css("width", wSize);
+  var hSize = $(window).height();
+  var wSize = $(window).width();
+  $("#ownsvg").height(hSize);
+  $("#ownsvg").width(wSize);
+  $(".wrap").height(hSize);
+  $(".wrap").width(wSize);
 });
 
 // svg animation
