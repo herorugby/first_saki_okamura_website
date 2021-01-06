@@ -2,19 +2,15 @@
 $(document).ready(function() {
   var hSize = $(window).height();
   var wSize = $(window).width();
-  $("#ownsvg").height(hSize);
-  $("#ownsvg").width(wSize);
-  $(".wrap").height(hSize);
-  $(".wrap").width(wSize);
+  $("#ownsvg, .wrap").height(hSize);
+  $("#ownsvg, .wrap").width(wSize);
 });
 
 $(window).resize(function() {
   var hSize = $(window).height();
   var wSize = $(window).width();
-  $("#ownsvg").height(hSize);
-  $("#ownsvg").width(wSize);
-  $(".wrap").height(hSize);
-  $(".wrap").width(wSize);
+  $("#ownsvg, .wrap").height(hSize);
+  $("#ownsvg, .wrap").width(wSize);
 });
 
 // svg animation
