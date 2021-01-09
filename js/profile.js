@@ -26,21 +26,17 @@ $(function() {
 });
 
 
-// page top btn/jump-btn fadein and fadeout function
+// page top btn fadein and fadeout function
   $(function () {
     let topBtn = $("#page-top-btn");
-    let ninaJumpBtn = $("#jump-btn");
     topBtn.hide();
-    ninaJumpBtn.hide();
 
 // will come of topBtn function
   $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
       topBtn.fadeIn(600);
-      ninaJumpBtn.fadeIn(1000);
     } else {
       topBtn.fadeOut(300);
-      ninaJumpBtn.fadeOut(300);
     }
   });
 
@@ -48,15 +44,6 @@ $(function() {
   topBtn.on("click", function() {
     $("body, html").animate({
       scrollTop: 0
-    }, 2000,"swing");
-    return false;
-  });
-
-// to nina section when click the ninaJumpBtn
-  ninaJumpBtn.on("click", function() {
-    ninaPosition = $("#nina-umbrella-project").offset().top;
-    $("body, html").animate({
-      scrollTop: ninaPosition
     }, 2000,"swing");
     return false;
   });
