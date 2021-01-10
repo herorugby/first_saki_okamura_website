@@ -18,6 +18,14 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #008000;
+}
+
 /* Header */
 /* css less than 559px ~mobile.ver~ */
 .wrap-header {
