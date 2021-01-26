@@ -42,6 +42,16 @@ $(function() {
   });
 });
 
+// cookie
+$(function () {
+  if ($.cookie("access") == undefined) {
+    $.cookie("access", "onece");
+    $("#ownsvg").css("display", "block");
+  } else {
+    $("#ownsvg").css("display", "none");
+  }
+});
+
 
 
 
@@ -96,15 +106,10 @@ $(function() {
 
 
 // copy right get full year
-// get Date preparation
-let dayOption = new Date();
-let myYear = dayOption.getFullYear();
-
 $(function() {
-  function copyRightYear() {
-    copyRight = $("#copyRight");
-    copyRight.text("2020-" + myYear);
-  }
-  copyRightYear();
+  let dayOption = new Date();
+  let myYear = dayOption.getFullYear();
+  let copyRight = $("#copyRight");
+  copyRight.text("2020-" + myYear);
 });
 

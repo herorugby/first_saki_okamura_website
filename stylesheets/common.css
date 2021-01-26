@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 /* font size auto control off */
-html {
-  -webkit-text-size-adjust: 100%;
-}
 
 body {
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +17,14 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #008000;
 }
 
 /* Header */
