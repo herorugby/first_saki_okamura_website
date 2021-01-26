@@ -42,6 +42,16 @@ $(function() {
   });
 });
 
+// cookie
+$(function () {
+  if ($.cookie("access") == undefined) {
+    $.cookie("access", "onece");
+    $("#ownsvg").css("display", "block");
+  } else {
+    $("#ownsvg").css("display", "none");
+  }
+});
+
 
 
 
