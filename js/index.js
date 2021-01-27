@@ -18,7 +18,6 @@ $(window).resize(function() {
 $(function () {
   if ($.cookie("access")) {
       $("#ownsvg").remove();
-      $("#ownsvg").css("opacity", "0");
       $(".wrap").css("opacity", "1");
     } else {
       $.cookie("access", "onece");
