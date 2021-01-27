@@ -45,7 +45,7 @@ $(function() {
 // cookie
 $(function () {
   if ($.cookie("access")) {
-      $("#ownsvg").css("display", "none");
+      $("#ownsvg").remove();
     } else {
       $.cookie("access", "onece");
       $("#ownsvg").css("display", "block");
