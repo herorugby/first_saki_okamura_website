@@ -15,72 +15,43 @@ $(window).resize(function() {
 
 
 // cookie
-$(function () {
-  if ($.cookie("access")) {
-      $("#ownsvg").remove();
-      $(".wrap").css("opacity", "1");
-    } else {
-      $.cookie("access", "onece");
-      $("#ownsvg").css("display", "block");
-      // svg animation
-      $(function() {
-        new Vivus('ownsvg',
-          {
-            type: "sync",
-            start: 'autostart',
-            duration: 220 ,
-            pathTimingFunction: Vivus.EASE_OUT
-          },
-          function(obj){
-            obj.el.classList.add('fill');
-          },
-        );
+if ($.cookie("access") == undefined) {
+  $.cookie("access", "onece");
+} else {
+  $("svg").remove();
+  $(".text").remove();
+  $(".wrap").css("opacity", "1");
+}
 
-      // svg fadeout function
-      $(function() {
-        $(".wrap").css("display", "none");
-          setTimeout(function() {
-            $("#ownsvg").fadeOut();
-          }, 6000);
-        });
-        $(function() {
-          setTimeout(function() {
-            $(".wrap").css("display", "block");
-            $(".wrap").animate({opacity: "1"}, 1000);
-          }, 5500);
-        });
-      });
-    }
+
+// svg animation
+$(function() {
+  new Vivus('ownsvg',
+    {
+      type: "sync",
+      start: 'autostart',
+      duration: 220 ,
+      pathTimingFunction: Vivus.EASE_OUT
+    },
+    function(obj){
+      obj.el.classList.add('fill');
+    },
+  );
+
+// svg fadeout function
+$(function() {
+  $(".wrap").css("display", "none");
+    setTimeout(function() {
+      $("#ownsvg").fadeOut();
+    }, 6000);
+  });
+  $(function() {
+    setTimeout(function() {
+      $(".wrap").css("display", "block");
+      $(".wrap").animate({opacity: "1"}, 1000);
+    }, 5500);
+  });
 });
-
-// // svg animation
-// $(function() {
-//   new Vivus('ownsvg',
-//     {
-//       type: "sync",
-//       start: 'autostart',
-//       duration: 220 ,
-//       pathTimingFunction: Vivus.EASE_OUT
-//     },
-//     function(obj){
-//       obj.el.classList.add('fill');
-//     },
-//   );
-
-// // svg fadeout function
-// $(function() {
-//   $(".wrap").css("display", "none");
-//     setTimeout(function() {
-//       $("#ownsvg").fadeOut();
-//     }, 6000);
-//   });
-//   $(function() {
-//     setTimeout(function() {
-//       $(".wrap").css("display", "block");
-//       $(".wrap").animate({opacity: "1"}, 1000);
-//     }, 5500);
-//   });
-// });
 
 
 // modal menu
