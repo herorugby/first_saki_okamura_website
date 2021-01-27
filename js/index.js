@@ -17,11 +17,12 @@ $(window).resize(function() {
 // cookie
 $(function () {
   if ($.cookie("access")) {
+      $("#ownsvg").remove();
       $("#ownsvg").css("opacity", "0");
       $(".wrap").css("opacity", "1");
     } else {
       $.cookie("access", "onece");
-      // $("#ownsvg").css("display", "block");
+      $("#ownsvg").css("display", "block");
       // svg animation
       $(function() {
         new Vivus('ownsvg',
