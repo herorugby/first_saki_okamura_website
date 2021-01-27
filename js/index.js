@@ -48,8 +48,9 @@ $(function () {
       $.cookie("access", "onece");
       $("#ownsvg").css("display", "block");
     } else {
+      $("#ownsvg").off();
       $("#ownsvg").css("display", "none");
-      $(".wrap").css("opacity", "1");
+      $(".wrap").off();
     }
 });
 
