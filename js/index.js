@@ -1,5 +1,5 @@
 // just size fixed of index.html top visual
-$(document).ready(function() {
+$(function() {
   var hSize = $(window).height();
   var wSize = $(window).width();
   $("#ownsvg, .wrap").height(hSize);
@@ -13,7 +13,16 @@ $(window).resize(function() {
   $("#ownsvg, .wrap").width(wSize);
 });
 
-// svg animation
+
+// cookie
+$(function () {
+  if ($.cookie("access")) {
+      $("#ownsvg").remove();
+      $(".wrap").css("opacity", "1");
+    } else {
+      $.cookie("access", "onece");
+      $("#ownsvg").css("display", "block");
+      // svg animation
 $(function() {
   new Vivus('ownsvg',
     {
@@ -41,16 +50,37 @@ $(function() {
     }, 5500);
   });
 });
-
-// cookie
-$(function () {
-  if ($.cookie("access")) {
-      $("#ownsvg").remove();
-    } else {
-      $.cookie("access", "onece");
-      $("#ownsvg").css("display", "block");
     }
 });
+
+// // svg animation
+// $(function() {
+//   new Vivus('ownsvg',
+//     {
+//       type: "sync",
+//       start: 'autostart',
+//       duration: 220 ,
+//       pathTimingFunction: Vivus.EASE_OUT
+//     },
+//     function(obj){
+//       obj.el.classList.add('fill');
+//     },
+//   );
+
+// // svg fadeout function
+// $(function() {
+//   $(".wrap").css("display", "none");
+//     setTimeout(function() {
+//       $("#ownsvg").fadeOut();
+//     }, 6000);
+//   });
+//   $(function() {
+//     setTimeout(function() {
+//       $(".wrap").css("display", "block");
+//       $(".wrap").animate({opacity: "1"}, 1000);
+//     }, 5500);
+//   });
+// });
 
 
 // modal menu
