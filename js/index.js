@@ -44,13 +44,11 @@ $(function() {
 
 // cookie
 $(function () {
-  if ($.cookie("access") == undefined) {
+  if ($.cookie("access")) {
+      $("#ownsvg").css("display", "none");
+    } else {
       $.cookie("access", "onece");
       $("#ownsvg").css("display", "block");
-    } else {
-      $("#ownsvg").off();
-      $("#ownsvg").css("display", "none");
-      $(".wrap").off();
     }
 });
 
