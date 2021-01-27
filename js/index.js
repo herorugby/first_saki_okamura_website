@@ -46,35 +46,35 @@ $(window).resize(function() {
 $(function () {
   if ($.cookie("access") == undefined) {
     $.cookie("access", "onece");
-    // $("#ownsvg").css("display", "block");
-    // svg animation
-    $(function() {
-      new Vivus('ownsvg',
-        {
-          type: "sync",
-          start: 'autostart',
-          duration: 220 ,
-          pathTimingFunction: Vivus.EASE_OUT
-        },
-        function(obj){
-          obj.el.classList.add('fill');
-        },
-      );
-
-    // svg fadeout function
-    $(function() {
-      $(".wrap").css("display", "none");
-        setTimeout(function() {
-          $("#ownsvg").fadeOut();
-        }, 6000);
-      });
+    $("#ownsvg").css("display", "block");
+      // svg animation
       $(function() {
-        setTimeout(function() {
-          $(".wrap").css("display", "block");
-          $(".wrap").animate({opacity: "1"}, 1000);
-        }, 5500);
+        new Vivus('ownsvg',
+          {
+            type: "sync",
+            start: 'autostart',
+            duration: 220 ,
+            pathTimingFunction: Vivus.EASE_OUT
+          },
+          function(obj){
+            obj.el.classList.add('fill');
+          },
+        );
+
+      // svg fadeout function
+      $(function() {
+        $(".wrap").css("display", "none");
+          setTimeout(function() {
+            $("#ownsvg").fadeOut();
+          }, 6000);
+        });
+        $(function() {
+          setTimeout(function() {
+            $(".wrap").css("display", "block");
+            $(".wrap").animate({opacity: "1"}, 1000);
+          }, 5500);
+        });
       });
-    });
       } else {
         $("#ownsvg").css("display", "none");
       }
