@@ -54,35 +54,6 @@ $(function() {
 });
 
 
-// modal menu
-$(function() {
-  $("#modal-openBtn").show();
-  $("#modal-closeBtn").hide();
-
-  $(window).on("load resize", function() {
-    let winW = $(window).width();
-    let devW = 959;
-    if (winW <= devW) {
-      $("#gnav").hide();
-    } else {
-      $("#gnav").show();
-    }
-  });
-
-  $("#modal-openBtn").on("click", function() {
-    $("#cover, #gnav").slideDown(500);
-    $(this).hide();
-    $("#modal-closeBtn").show();
-  });
-  $("#cover, #modal-closeBtn").on("click", function() {
-    $("#cover, #gnav").slideUp(500);
-    $("#modal-openBtn").show();
-    $("#modal-closeBtn").hide();
-  });
-
-});
-
-
 // slideShow
 $(function() {
   $(".wrap-main").each(function() {
@@ -102,13 +73,3 @@ $(function() {
     }
   });
 });
-
-
-// copy right get full year
-$(function() {
-  let dayOption = new Date();
-  let myYear = dayOption.getFullYear();
-  let copyRight = $("#copyRight");
-  copyRight.text("2020-" + myYear);
-});
-

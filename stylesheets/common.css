@@ -32,13 +32,16 @@ a:visited {
 .wrap-header {
   height: 5vh;
   color: #fff;
-  background-color: black;
 }
 
 .header__contents {
   display: flex;
   justify-content: space-around;
   line-height: 5vh;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
 }
 
 .site__title {
@@ -57,22 +60,13 @@ a:visited {
   font-size: 1.3125rem;
 }
 
-#cover {
-  display: none;
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
-}
-
 #gnav {
   display: none;
   position: absolute;
   width: 50%;
   height: auto;
   right: 0;
-  top: 10%;
+  top: 100%;
   z-index: 2;
   background: rgba(130, 130, 130, 0.7);
   font-size: 1rem;

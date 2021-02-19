@@ -14,25 +14,15 @@ $(function() {
   });
 
   $("#modal-openBtn").on("click", function() {
-    $("#cover, #gnav").slideDown(500);
+    $("#gnav").slideDown(500);
     $(this).hide();
     $("#modal-closeBtn").show();
   });
-  $("#cover, #modal-closeBtn").on("click", function() {
-    $("#cover, #gnav").slideUp(500);
+  $("#modal-closeBtn").on("click", function() {
+    $("#gnav").slideUp(500);
     $("#modal-openBtn").show();
     $("#modal-closeBtn").hide();
   });
-});
-
-
-// flickity jquery
-let flkty = new Flickity(".main__contents__slide-show", {
-  wrapAround: true,
-  autoPlay: true,
-  contain: true,
-  prevNextButtons: true,
-  resize: true
 });
 
 

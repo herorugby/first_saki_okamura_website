@@ -77,6 +77,29 @@ img {
   font-family: "Noto Serif JP", serif;
 }
 
+.wrap-main__item--top {
+  display: block;
+  width: 45px;
+  position: fixed;
+  top: 75vh;
+  right: 3%;
+  font-size: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10%;
+  z-index: 1;
+}
+
+.wrap-main__item--top:visited {
+  color: #fff;
+}
+
+.page-up-icon {
+  font-size: 1rem;
+}
+
 /* css 561px or more ~tablet.ver~ */
 /* Main */
 @media screen and (min-width: 560px) {
@@ -102,6 +125,16 @@ img {
   .site__caution {
     font-size: 0.8125rem;
   }
+
+  .wrap-main__item--top {
+    width: 60px;
+    top: 77vh;
+    font-size: 0.8rem;
+  }
+
+  .page-up-icon {
+    font-size: 1.3rem;
+  }
 }
 
 /* css 960px or more ~desktop.ver~ */
@@ -119,7 +152,31 @@ img {
     line-height: 2.2;
     font-size: 1.25rem;
   }
+
   .site__caution {
     font-size: 0.875rem;
+  }
+
+  .wrap-main__item--top {
+    width: 60px;
+    top: 75vh;
+    right: 5%;
+    font-size: 1rem;
+  }
+
+  .page-up-icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 930px) and (orientation: landscape) {
+  .wrap-main__item--top {
+    width: 45px;
+    top: 68vh;
+    font-size: 0.6rem;
+  }
+
+  .page-up-icon {
+    font-size: 1rem;
   }
 }

@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html lang="ja">
  <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>【岡村 咲】ギャラリーページ</title>
-   <link rel="stylesheet" href="stylesheets/gallery.css">
-   <link rel="stylesheet" href="stylesheets/common.css">
-   <link rel="icon" sizes="16x16" href="images/favicon16*16.ico">
-   <link rel="icon" sizes="32x32" href="images/favicon32*32.ico">
-   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
-   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap&amp;subset=japanese" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【岡村 咲】ギャラリーページ</title>
+
+    <!-- icon -->
+    <link rel="icon" sizes="16x16" href="images/favicon16*16.ico">
+    <link rel="icon" sizes="32x32" href="images/favicon32*32.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="stylesheets/common.css">
+    <link rel="stylesheet" href="stylesheets/gallery.css">
+
+    <!-- flickity css file -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- jquery cdn -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- flickity js file -->
+    <script type="text/javascript" src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital@1&family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/72a93cd7e4.js" crossorigin="anonymous"></script>
+
   </head>
 
   <body>
@@ -29,7 +43,6 @@
               <i id="modal-openBtn" class="fas fa-bars"></i>
               <i id="modal-closeBtn" class="fas fa-times"></i>
             </div>
-            <div id="cover"></div>
             <nav id="gnav">
               <ul class="gnav__list">
                 <li class="gnav__list__item"><a href="index.html">Home</a></li>
@@ -91,8 +104,11 @@
           </section>
           <p class="site__caution">
             ※当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。<br>
-            また、まとめサイト等への引用を厳禁いたします。
+            &ensp;また、まとめサイト等への引用を厳禁いたします。<br>
+            ※当サイトを快適にご利用いただくため、クッキーを利用しています。<br>
+            &ensp;クッキーを使用せずに当ウェブサイトへアクセスすることも可能です。
           </p>
+          <a href="#header" id="page-top-btn" class="wrap-main__item--top"><i class="page-up-icon fas fa-angle-double-up"></i><br>PAGE<br>TOP</a>
         </div>
       </main>
 
@@ -121,6 +137,8 @@
         </div>
       </footer>
     </div>
-  <script src="js/gallery.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/flickity.js"></script>
+  <script src="js/fade.js"></script>
   </body>
 </html>
