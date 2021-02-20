@@ -14,15 +14,15 @@
     <link rel="stylesheet" href="stylesheets/common.css">
     <link rel="stylesheet" href="stylesheets/gallery.css">
 
-    <!-- flickity css file -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.min.css">
+    <!-- read css of slick -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
 
     <!-- jquery cdn -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <!-- flickity js file -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.0/flickity.pkgd.min.js"></script>
-
+    <!-- cdn of slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -101,6 +101,38 @@
                 <img src="images/gallery_img_sp6.jpg" alt="バンカーショットの風景">
               </picture>
             </div>
+            <div class="main__contents__slide-show__thumb">
+              <picture class="main-contents__img__thumb">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop1.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet1.jpg">
+                <img src="images/gallery_img_sp1.jpg" alt="岡村咲の微笑み">
+              </picture>
+              <picture class="main-contents__img__thumb">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop2.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet2.jpg">
+                <img src="images/gallery_img_sp2.jpg" alt="フェアウェイからのスイング">
+              </picture>
+              <picture class="main-contents__img__thumb">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop3.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet3.jpg">
+                <img src="images/gallery_img_sp3.jpg" alt="ドライバーによるティーショットの風景">
+              </picture>
+              <picture class="main-contents__img__thumb">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop4.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet4.jpg">
+                <img src="images/gallery_img_sp4.jpg" alt="岡村咲の笑顔">
+              </picture>
+              <picture class="main-contents__img__thumb">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop5.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet5.jpg">
+                <img src="images/gallery_img_sp5.jpg" alt="ドライバーによるティーショットの風景">
+              </picture>
+              <picture class="main-contents__img__thumb">
+                <source media="(min-width: 960px)" srcset="images/gallery_img_desktop6.jpg">
+                <source media="(min-width: 560px)" srcset="images/gallery_img_tablet6.jpg">
+                <img src="images/gallery_img_sp6.jpg" alt="バンカーショットの風景">
+              </picture>
+            </div>
           </section>
           <p class="site__caution">
             ※スライドショーが正常に動作しない場合は、リロードを行いご覧ください。<br>
@@ -137,7 +169,7 @@
       </footer>
     </div>
   <script src="js/common.js"></script>
-  <script src="js/flickity.js"></script>
+  <script src="js/slick.js"></script>
   <script src="js/fade.js"></script>
   </body>
 </html>

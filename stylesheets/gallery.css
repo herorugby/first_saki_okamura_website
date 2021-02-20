@@ -26,17 +26,34 @@
 }
 
 .main__contents__description_slide-show {
-  margin: 5% 0;
+  margin: 5% auto;
   font-size: 1rem;
 }
 
 .main__contents__slide-show {
   width: 100%;
-  margin: 3% auto;
+  margin: 3% auto 1%;
+}
+
+.main__contents__slide-show picture img {
+  width: 100%;
+}
+
+.main__contents__slide-show__thumb {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-contents__img__thumb {
+  width: 33.3%;
+}
+
+.main__contents__slide-show__thumb picture img {
+  width: 100%;
 }
 
 .site__caution {
-  margin: 15% 0 3%;
+  margin: 5% auto 3%;
   font-size: 0.75rem;
   font-family: "Noto Serif JP", serif;
 }
@@ -77,16 +94,16 @@
   }
 
   .main__contents__description_slide-show {
-    margin: 2% 0;
+    margin: 2% auto;
     font-size: 1.125rem;
   }
 
   .main__contents__slide-show {
-    margin: 5% auto;
+    margin: 3% auto 1%;
   }
 
   .site__caution {
-    margin: 7% 0 4%;
+    margin: 2% auto 3%;
     font-size: 0.8125rem;
   }
 
@@ -114,16 +131,26 @@
   }
 
   .main__contents__description_slide-show {
-    margin: 4% 0;
+    margin: 3% auto 2%;
     font-size: 1.25rem;
   }
 
   .main__contents__slide-show {
-    margin: 5% auto 10%;
+    margin: 2% auto 1%;
+  }
+
+  .main__contents__slide-show picture img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main__contents__slide-show__thumb picture img {
+    width: 80%;
+    margin: 0 auto;
   }
 
   .site__caution {
-    margin: 3% 0 3%;
+    margin: 1% auto 3%;
     font-size: 0.875rem;
   }
 
@@ -142,8 +169,7 @@
 @media screen and (max-width: 930px) and (orientation: landscape) {
   .main__contents__slide-show {
     width: 80%;
-    margin: 3% auto;
-    padding: 10% 0 5% 0;
+    margin: 1% auto 2%;
   }
 
   .wrap-main__item--top {
