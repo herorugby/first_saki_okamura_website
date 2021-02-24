@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 /* font size auto control off */
-
 body {
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -336,7 +334,6 @@ a:visited {
   }
 
   /* Footer */
-
   .wrap-footer {
     height: 16vh;
   }
