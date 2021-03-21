@@ -61,14 +61,14 @@ $(function() {
     let slideCount = slides.length;
     let currentIndex = 0;
 
-    slides.eq(currentIndex).fadeIn(1000);
+    slides.eq(currentIndex).fadeIn(1700);
 
-    setInterval(showNextSlide, 3000);
+    setInterval(showNextSlide, 4000);
 
     function showNextSlide() {
       let nextIndex = (currentIndex + 1) % slideCount;
-      slides.eq(currentIndex).fadeOut(1000);
-      slides.eq(nextIndex).fadeIn(1000);
+      slides.eq(currentIndex).fadeOut(1700);
+      slides.eq(nextIndex).fadeIn(1700);
       currentIndex = nextIndex;
     }
   });

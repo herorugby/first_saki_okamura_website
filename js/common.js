@@ -17,11 +17,17 @@ $(function() {
     $("#gnav").slideDown(500);
     $(this).hide();
     $("#modal-closeBtn").show();
+    $("#gnav").css("z-index", "5");
+    $("html,body").css("overflow", "hidden");
+    // $("html,body").css("pointer-events", "none");
+    return false;
   });
   $("#modal-closeBtn").on("click", function() {
     $("#gnav").slideUp(500);
     $("#modal-openBtn").show();
     $("#modal-closeBtn").hide();
+    $("html,body").removeAttr("style");
+    return false;
   });
 });
 
