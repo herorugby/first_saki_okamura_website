@@ -78,7 +78,7 @@ $(function() {
   });
   $(function() {
     setTimeout(function() {
-      $(".wrap").css("display", "block");
+      // $(".wrap").css("display", "block");
       // $(".wrap").animate({opacity: "1"}, 1000);
       $(".wrap").fadeIn();
     }, 5000);
