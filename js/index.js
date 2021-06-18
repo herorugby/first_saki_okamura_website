@@ -1,3 +1,14 @@
+// cookie
+$(function () {
+  let cookie = $.cookie("access");
+  if (cookie) {
+    $(".outer").remove();
+    $(".wrap").css("opacity", "1");
+  } else {
+    $.cookie("access", "onece");
+  }
+});
+
 // just size fixed of index.html top visual
 // $(function() {
 //   var hSize = $(window).height();
@@ -26,14 +37,15 @@ $(window).resize(function() {
 });
 
 // cookie
-if ($.cookie("access") == undefined) {
-  $.cookie("access", "onece");
-} else {
-  // $("svg").remove();
-  // $(".text").remove();
-  $(".outer").remove();
-  $(".wrap").css("opacity", "1");
-}
+// if ($.cookie("access") == undefined) {
+//   $.cookie("access", "onece");
+// } else {
+//   // $("svg").remove();
+//   // $(".text").remove();
+//   $(".outer").remove();
+//   $(".wrap").css("opacity", "1");
+// }
+
 
 
 // svg animation
