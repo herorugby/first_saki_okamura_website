@@ -55,35 +55,35 @@ $(window).resize(function() {
 
 
 // svg animation
-$(function() {
-  // new Vivus('ownsvg',
-  //   {
-  //     type: "sync",
-  //     start: 'autostart',
-  //     duration: 220 ,
-  //     pathTimingFunction: Vivus.EASE_OUT
-  //   },
-  //   function(obj){
-  //     obj.el.classList.add('fill');
-  //   },
-  // );
+// $(function() {
+//   new Vivus('ownsvg',
+//     {
+//       type: "sync",
+//       start: 'autostart',
+//       duration: 220 ,
+//       pathTimingFunction: Vivus.EASE_OUT
+//     },
+//     function(obj){
+//       obj.el.classList.add('fill');
+//     },
+//   );
 
 // svg fadeout function
-$(function() {
-  $(".wrap").css("display", "none");
-    setTimeout(function() {
-      // $("#ownsvg").fadeOut();
-      $(".outer").fadeOut();
-    }, 5000);
-  });
-  $(function() {
-    setTimeout(function() {
-      // $(".wrap").css("display", "block");
-      // $(".wrap").animate({opacity: "1"}, 1000);
-      $(".wrap").fadeIn();
-    }, 5000);
-  });
-});
+// $(function() {
+//   $(".wrap").css("display", "none");
+//     setTimeout(function() {
+//       // $("#ownsvg").fadeOut();
+//       $(".outer").fadeOut();
+//     }, 5000);
+//   });
+//   $(function() {
+//     setTimeout(function() {
+//       // $(".wrap").css("display", "block");
+//       // $(".wrap").animate({opacity: "1"}, 1000);
+//       $(".wrap").fadeIn();
+//     }, 5000);
+//   });
+// });
 
 
 // slideShow
