@@ -69,44 +69,6 @@
   }
 }
 
-/* #ownsvg {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  background-color: #000;
-}
-
-.text {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 0.264583;
-}
-
-.fill path {
-  fill: #fff;
-  stroke: none;
-  animation: text_white 1s ease-in 0s;
-  -webkit-animation: text_white 1s ease-in 0s;
-}
-
-@-webkit-keyframes text_white {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #fff;
-  }
-}
-
-@keyframes text_white {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #fff;
-  }
-} */
-
 /* Wrap */
 .wrap {
   width: 100%;
@@ -136,6 +98,9 @@ img {
 @media screen and (min-width: 560px) {
   .wrap-main {
     height: 80vh;
+  }
+  .loading {
+    font-size: 3rem;
   }
 }
 
