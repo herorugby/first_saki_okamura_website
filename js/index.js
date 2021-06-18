@@ -8,8 +8,8 @@
 $(function() {
   var hSize = $(window).height();
   var wSize = $(window).width();
-  $(".loading, .wrap").height(hSize);
-  $(".loading, .wrap").width(wSize);
+  $(".outer, .wrap").height(hSize);
+  $(".outer, .wrap").width(wSize);
 });
 
 // $(window).resize(function() {
@@ -21,8 +21,8 @@ $(function() {
 $(window).resize(function() {
   var hSize = $(window).height();
   var wSize = $(window).width();
-  $(".loading, .wrap").height(hSize);
-  $(".loading, .wrap").width(wSize);
+  $(".outer, .wrap").height(hSize);
+  $(".outer, .wrap").width(wSize);
 });
 
 // cookie
@@ -31,7 +31,7 @@ if ($.cookie("access") == undefined) {
 } else {
   // $("svg").remove();
   // $(".text").remove();
-  $(".loading").remove();
+  $(".outer").remove();
   $(".wrap").css("opacity", "1");
 }
 
@@ -55,7 +55,7 @@ $(function() {
   $(".wrap").css("display", "none");
     setTimeout(function() {
       // $("#ownsvg").fadeOut();
-      $(".loading").fadeOut();
+      $(".outer").fadeOut();
     }, 5000);
   });
   $(function() {
