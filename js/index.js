@@ -5,14 +5,14 @@ if ($.cookie("access") == undefined) {
     setTimeout(function() {
       // $("#ownsvg").fadeOut();
       $(".outer").fadeOut();
-    }, 5000);
-  $(function() {
-    setTimeout(function() {
-      // $(".wrap").css("display", "block");
-      // $(".wrap").animate({opacity: "1"}, 1000);
       $(".wrap").fadeIn();
     }, 5000);
-  });
+  // $(function() {
+  //   setTimeout(function() {
+  //     // $(".wrap").css("display", "block");
+  //     // $(".wrap").animate({opacity: "1"}, 1000);
+  //   }, 5000);
+  // });
 } else {
   // $("svg").remove();
   // $(".text").remove();
