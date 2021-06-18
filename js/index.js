@@ -1,12 +1,18 @@
 // cookie
 $(function () {
-  let cookie = $.cookie("access");
-  if (cookie) {
+  if ($.cookie('access') != 'onece') {
     $(".outer").remove();
-    $(".wrap").css("opacity", "1");
+    $(".wrap").css("display", "block");
   } else {
     $.cookie("access", "onece");
   }
+  // let cookie = $.cookie("access");
+  // if (cookie) {
+  //   $(".outer").remove();
+  //   $(".wrap").css("opacity", "1");
+  // } else {
+  //   $.cookie("access", "onece");
+  // }
 });
 
 // just size fixed of index.html top visual
