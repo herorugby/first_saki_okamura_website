@@ -1,19 +1,24 @@
 // cookie
-$(function () {
-  if ($.cookie('access') != 'onece') {
-    $(".outer").remove();
-    $(".wrap").css("display", "block");
-  } else {
-    $.cookie("access", "onece");
-  }
-  // let cookie = $.cookie("access");
-  // if (cookie) {
-  //   $(".outer").remove();
-  //   $(".wrap").css("opacity", "1");
-  // } else {
-  //   $.cookie("access", "onece");
-  // }
-});
+if ($.cookie("access") == undefined) {
+  $.cookie("access", "onece");
+  $(".wrap").css("display", "none");
+    setTimeout(function() {
+      // $("#ownsvg").fadeOut();
+      $(".outer").fadeOut();
+    }, 5000);
+  $(function() {
+    setTimeout(function() {
+      // $(".wrap").css("display", "block");
+      // $(".wrap").animate({opacity: "1"}, 1000);
+      $(".wrap").fadeIn();
+    }, 5000);
+  });
+} else {
+  // $("svg").remove();
+  // $(".text").remove();
+  $(".outer").remove();
+  $(".wrap").css("opacity", "1");
+}
 
 // just size fixed of index.html top visual
 // $(function() {
@@ -55,7 +60,7 @@ $(window).resize(function() {
 
 
 // svg animation
-$(function() {
+// $(function() {
 //   new Vivus('ownsvg',
 //     {
 //       type: "sync",
@@ -69,21 +74,21 @@ $(function() {
 //   );
 
 // svg fadeout function
-$(function() {
-  $(".wrap").css("display", "none");
-    setTimeout(function() {
-      // $("#ownsvg").fadeOut();
-      $(".outer").fadeOut();
-    }, 5000);
-  });
-  $(function() {
-    setTimeout(function() {
-      // $(".wrap").css("display", "block");
-      // $(".wrap").animate({opacity: "1"}, 1000);
-      $(".wrap").fadeIn();
-    }, 5000);
-  });
-});
+// $(function() {
+//   $(".wrap").css("display", "none");
+//     setTimeout(function() {
+//       // $("#ownsvg").fadeOut();
+//       $(".outer").fadeOut();
+//     }, 5000);
+//   });
+//   $(function() {
+//     setTimeout(function() {
+//       // $(".wrap").css("display", "block");
+//       // $(".wrap").animate({opacity: "1"}, 1000);
+//       $(".wrap").fadeIn();
+//     }, 5000);
+//   });
+// });
 
 
 // slideShow

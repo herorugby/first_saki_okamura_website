@@ -3,20 +3,7 @@
 .outer {
   display: table;
   width: 100%;
-  /* animation: fadeout 4s forwards; */
 }
-/* @keyframes fadeout {
-  0% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 50%;
-  }
-  100% {
-    opacity: 0;
-  }
-} */
-
 .loading {
   display: table-cell;
   vertical-align: middle;
