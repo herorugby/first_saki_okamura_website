@@ -3,9 +3,9 @@
 .outer {
   display: table;
   width: 100%;
-  animation: fadeout 4s forwards;
+  /* animation: fadeout 4s forwards; */
 }
-@keyframes fadeout {
+/* @keyframes fadeout {
   0% {
     opacity: 1;
   }
@@ -15,7 +15,7 @@
   100% {
     opacity: 0;
   }
-}
+} */
 
 .loading {
   display: table-cell;
